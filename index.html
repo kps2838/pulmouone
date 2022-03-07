@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>풀무원</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/pc.css" media="screen and (min-width: 768px)">
+  <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 767px)">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./js/main.js"></script>
+</head>
+<body>
+  <header id="main-header" class="container">
+    <h1>
+      <a href="./"><img src="./images/logo.png" alt="풀무원"></a>
+    </h1>
+
+    <nav id="gnb">
+      <ul>
+        <li><a href="./">홈</a></li>
+        <li><a href="#">회사소개</a></li>
+        <li><a href="#">바른먹거리&로하스</a></li>
+        <li><a href="#">사회책임경영</a></li>
+        <li><a href="#">뉴스룸</a></li>
+      </ul>
+    </nav>
+
+    <div class="right-menu">
+      <select name="family-link" id="family-link" class="pc-only">
+        <option value="">Family site 바로가기</option>
+        <option value="">menu</option>
+        <option value="">menu</option>
+        <option value="">menu</option>
+        <option value="">menu</option>
+      </select>
+      <!-- pc용 사이트맵 토굴 버튼 -->
+      <button id="site-map-btn" class="pc-only">
+        <img src="./images/toggle_btn.svg" alt="사이트맵 버튼">
+      </button>
+
+      <!-- 모바일용 사이트맵 토굴 버튼 -->
+      <button id="gnb-toggle-btn" class="mobile-only">
+        <img src="./images/mobile-toggle-btn.svg" alt="main-menu">
+      </button>      
+    </div>
+  </header>
+  
+    <!-- 사이트맵 레이어 팝업창 -->
+    <div class="sitemap-modal pc-only">
+      <ul>
+        <li><a href="#">회사소개</a>
+          <ul>
+            <li><a href="#">CEO 인사말</a></li>
+            <li><a href="#">연혁</a></li>
+            <li><a href="#">가치체계</a></li>
+            <li><a href="#">사업소개</a></li>
+          </ul>
+        </li>
+        <li><a href="#">바른먹거리&로하스</a>
+          <ul>
+            <li><a href="#">로하스 식품</a></li>
+            <li><a href="#">바른먹거리</a></li>
+            <li><a href="#">환경 캠페인</a></li>
+          </ul>
+        </li>
+        <li><a href="#">사회책임경영</a>
+          <ul>
+            <li><a href="#">추진전략</a></li>
+            <li><a href="#">활동 및  실적</a></li>
+            <li><a href="#">수상</a></li>
+          </ul>
+        </li> 
+        <li><a href="#">뉴스룸</a>
+          <ul>
+            <li><a href="#">풀무원 뉴스</a></li>
+            <li><a href="#">멀티미디어</a></li>
+            <li><a href="#">공지사항</a></li>
+          </ul>
+        </li>
+      </ul>
+      <button id="sitemap-modal-close"><img src="./images/close.svg" alt=""></button>
+    </div>
+
+  
+</body>
+</html>

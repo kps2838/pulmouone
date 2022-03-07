@@ -1,0 +1,24 @@
+:root{
+  --text-color: #333;
+  --main-color: #8DC63F;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  color: var(--text-color);
+  background: #fff;
+}
